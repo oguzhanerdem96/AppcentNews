@@ -8,7 +8,8 @@
 import UIKit
 
 class FavoritesVC: UIViewController {
-
+    @IBOutlet weak var favoritesTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

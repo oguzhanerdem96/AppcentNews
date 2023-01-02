@@ -99,6 +99,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Favorites" id="fIn-Lz-xaD"/>
+                    <connections>
+                        <outlet property="favoritesTableView" destination="uYz-8U-Ph1" id="s5Y-RA-Som"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbw-D7-9gt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -198,7 +201,6 @@
                             <constraint firstItem="vbf-gq-Fc4" firstAttribute="leading" secondItem="Eiw-mo-tNw" secondAttribute="trailing" constant="8" symbolic="YES" id="mVK-z6-qx8"/>
                             <constraint firstItem="779-P1-G7O" firstAttribute="top" secondItem="Ssl-K3-pCk" secondAttribute="bottom" constant="8" symbolic="YES" id="mVU-ID-ZDq"/>
                             <constraint firstItem="v8E-eI-X9E" firstAttribute="trailing" secondItem="P5A-cr-eDA" secondAttribute="trailing" constant="88" id="mkV-bZ-ijh"/>
-                            <constraint firstItem="P5A-cr-eDA" firstAttribute="width" secondItem="LJq-Ho-0Q6" secondAttribute="width" multiplier="0.496183" id="oay-ZE-cxb"/>
                             <constraint firstItem="v8E-eI-X9E" firstAttribute="trailing" secondItem="tdM-OO-81t" secondAttribute="trailing" constant="16" id="q0R-r0-AzH"/>
                             <constraint firstItem="779-P1-G7O" firstAttribute="leading" secondItem="vbf-gq-Fc4" secondAttribute="trailing" constant="20" id="xN9-3a-s6x"/>
                             <constraint firstItem="Hms-OZ-LCg" firstAttribute="top" secondItem="v8E-eI-X9E" secondAttribute="top" id="xTf-WS-fMC"/>
@@ -347,6 +349,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Appcent NewApp" id="YkR-jG-PV0"/>
+                    <connections>
+                        <outlet property="homeTableView" destination="KKt-n0-faG" id="zAZ-0E-ZOk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -358,6 +363,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FrU-f3-ALd" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yhw-5Y-A5K">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
