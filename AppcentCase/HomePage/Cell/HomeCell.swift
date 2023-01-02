@@ -14,13 +14,17 @@ class HomeCell: UITableViewCell {
     @IBOutlet weak var titleLbl: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        congifureCell()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+        
+       
     }
 
+    private func congifureCell() {
+        NewImage.layer.cornerRadius = 20
+    }
 }

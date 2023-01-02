@@ -83,7 +83,6 @@
 				661F0CEC29634CE300352D4C /* Source */,
 				661F0CE429634C7800352D4C /* Models */,
 				661AA1EE296200AE00F5CE3F /* Info.plist */,
-				661AA1F8296209FE00F5CE3F /* WebViewVC.swift */,
 			);
 			path = AppcentCase;
 			sourceTree = "<group>";
@@ -149,6 +148,7 @@
 		661F0CF229634DC200352D4C /* WebPage */ = {
 			isa = PBXGroup;
 			children = (
+				661F0D062963536100352D4C /* View */,
 			);
 			path = WebPage;
 			sourceTree = "<group>";
@@ -220,6 +220,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		661F0D062963536100352D4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				661AA1F8296209FE00F5CE3F /* WebViewVC.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
