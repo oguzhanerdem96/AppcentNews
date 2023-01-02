@@ -24,7 +24,13 @@ extension HomeVC: UITableViewDelegate , UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "mainCell", for: indexPath) as! HomeCell
+        
+        cell.titleLbl.text = "title"
+        cell.descriptionLbl.text = "description lbl agasgagklaehgjoşıeqjgpoqjthqn nlşjqn ljşqgkeb gjklqgq "
+        cell.imageView?.image = UIImage(named: "car1")
+        return cell
+        
     }
     
     

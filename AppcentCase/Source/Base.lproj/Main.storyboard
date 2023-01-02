@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="150" id="LHq-4i-hIv">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="150" id="LHq-4i-hIv" customClass="FavoritesCell" customModule="AppcentCase" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LHq-4i-hIv" id="EB6-ij-k2Z">
@@ -269,7 +269,7 @@
                                 <rect key="frame" x="0.0" y="159" width="393" height="693"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="150" id="2N2-tX-lqz">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="mainCell" rowHeight="150" id="2N2-tX-lqz" customClass="HomeCell" customModule="AppcentCase" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2N2-tX-lqz" id="Xfk-QM-q0o">
@@ -325,6 +325,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="NewImage" destination="X83-Se-F3k" id="dBR-bp-A4H"/>
+                                            <outlet property="descriptionLbl" destination="yWl-Jz-ogf" id="IvN-VG-7nS"/>
+                                            <outlet property="imageView" destination="X83-Se-F3k" id="9fg-g3-7Xd"/>
+                                            <outlet property="titleLbl" destination="Egp-2l-7Z2" id="BRZ-0s-TX4"/>
                                             <segue destination="7Gf-nK-7u0" kind="show" id="iI2-ro-d6d"/>
                                         </connections>
                                     </tableViewCell>
