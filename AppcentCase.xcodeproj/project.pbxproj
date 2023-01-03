@@ -22,6 +22,10 @@
 		661F0D0129634F8200352D4C /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661F0D0029634F8200352D4C /* DetailCell.swift */; };
 		661F0D0329634F9C00352D4C /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661F0D0229634F9C00352D4C /* FavoritesCell.swift */; };
 		661F0D0529634FB000352D4C /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661F0D0429634FB000352D4C /* HomeCell.swift */; };
+		66BAC11C2964433900ECD36E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BAC11B2964433900ECD36E /* TabBarController.swift */; };
+		66BAC11E2964639E00ECD36E /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BAC11D2964639E00ECD36E /* NewsModel.swift */; };
+		66BAC121296463CB00ECD36E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 66BAC120296463CB00ECD36E /* Alamofire */; };
+		66BAC124296463DC00ECD36E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 66BAC123296463DC00ECD36E /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,8 @@
 		661F0D0029634F8200352D4C /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		661F0D0229634F9C00352D4C /* FavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
 		661F0D0429634FB000352D4C /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		66BAC11B2964433900ECD36E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		66BAC11D2964639E00ECD36E /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66BAC124296463DC00ECD36E /* Kingfisher in Frameworks */,
+				66BAC121296463CB00ECD36E /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +66,7 @@
 		661AA1D1296200AE00F5CE3F = {
 			isa = PBXGroup;
 			children = (
+				66BAC11A2964431400ECD36E /* TabBarController */,
 				661AA1E6296200AE00F5CE3F /* AppcentCase.xcdatamodeld */,
 				661AA1DC296200AE00F5CE3F /* AppcentCase */,
 				661AA1DB296200AE00F5CE3F /* Products */,
@@ -90,6 +99,7 @@
 		661F0CE429634C7800352D4C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				66BAC11D2964639E00ECD36E /* NewsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -230,6 +240,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		66BAC11A2964431400ECD36E /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				66BAC11B2964433900ECD36E /* TabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,6 +264,10 @@
 			dependencies = (
 			);
 			name = AppcentCase;
+			packageProductDependencies = (
+				66BAC120296463CB00ECD36E /* Alamofire */,
+				66BAC123296463DC00ECD36E /* Kingfisher */,
+			);
 			productName = AppcentCase;
 			productReference = 661AA1DA296200AE00F5CE3F /* AppcentCase.app */;
 			productType = "com.apple.product-type.application";
@@ -274,6 +296,10 @@
 				Base,
 			);
 			mainGroup = 661AA1D1296200AE00F5CE3F;
+			packageReferences = (
+				66BAC11F296463CB00ECD36E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				66BAC122296463DC00ECD36E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 661AA1DB296200AE00F5CE3F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -301,7 +327,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66BAC11E2964639E00ECD36E /* NewsModel.swift in Sources */,
 				661F0D0129634F8200352D4C /* DetailCell.swift in Sources */,
+				66BAC11C2964433900ECD36E /* TabBarController.swift in Sources */,
 				661F0CFC29634E3200352D4C /* NetworkManager.swift in Sources */,
 				661F0CFA29634E2700352D4C /* NetworkHelper.swift in Sources */,
 				661AA1F5296209CF00F5CE3F /* FavoritesVC.swift in Sources */,
@@ -528,6 +556,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		66BAC11F296463CB00ECD36E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		66BAC122296463DC00ECD36E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		66BAC120296463CB00ECD36E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66BAC11F296463CB00ECD36E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		66BAC123296463DC00ECD36E /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 66BAC122296463DC00ECD36E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		661AA1E6296200AE00F5CE3F /* AppcentCase.xcdatamodeld */ = {

@@ -13,8 +13,24 @@ class FavoritesVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
 
+
+}
+
+extension FavoritesVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "favCell", for: indexPath) as! FavoritesCell
+        cell.favTitleLbl.text = "test title "
+        cell.favDescLbl.text = "agagagalga a mglkn lgan lnglkanl gansk nalgkna klnflka nklgan "
+        cell.favImageView.image = UIImage(named: "appcent")
+        return cell
+        
+    }
+    
 
 }
