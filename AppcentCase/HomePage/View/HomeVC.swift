@@ -7,12 +7,18 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+protocol HomeScreenProtocol: AnyObject {
+    
+}
+
+final class HomeVC: UIViewController {
+   private let viewModel = HomeViewModel()
 
     @IBOutlet weak var homeTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        viewModel.view = self
+        viewModel.viewDidLoad()
      
     }
     
@@ -34,4 +40,7 @@ extension HomeVC: UITableViewDelegate , UITableViewDataSource {
     }
     
     
+}
+
+extension HomeVC: HomeScreenProtocol {
 }
