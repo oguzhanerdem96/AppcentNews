@@ -27,6 +27,7 @@
 		66BAC121296463CB00ECD36E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 66BAC120296463CB00ECD36E /* Alamofire */; };
 		66BAC124296463DC00ECD36E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 66BAC123296463DC00ECD36E /* Kingfisher */; };
 		66BAC12629646B5900ECD36E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BAC12529646B5900ECD36E /* HomeViewModel.swift */; };
+		66F36F8C29674A3E00F48635 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F36F8B29674A3E00F48635 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		66BAC11B2964433900ECD36E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		66BAC11D2964639E00ECD36E /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		66BAC12529646B5900ECD36E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		66F36F8B29674A3E00F48635 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			children = (
 				661F0CF929634E2700352D4C /* NetworkHelper.swift */,
 				661F0CFB29634E3200352D4C /* NetworkManager.swift */,
+				66F36F8B29674A3E00F48635 /* Service.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				661AA1FB29620AB600F5CE3F /* HomeVC.swift in Sources */,
 				661AA1DE296200AE00F5CE3F /* AppDelegate.swift in Sources */,
 				661AA1F9296209FE00F5CE3F /* WebViewVC.swift in Sources */,
+				66F36F8C29674A3E00F48635 /* Service.swift in Sources */,
 				661AA1E0296200AE00F5CE3F /* SceneDelegate.swift in Sources */,
 				661AA1E8296200AE00F5CE3F /* AppcentCase.xcdatamodeld in Sources */,
 				661AA1F7296209E200F5CE3F /* DetailVC.swift in Sources */,
