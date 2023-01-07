@@ -21,8 +21,13 @@ enum ErrorTypes: String , Error {
 
 class NetworkHelper {
     static let shared = NetworkHelper()
-    let apiKEY = "206451b170ae4f73834d02e9badb031e"
-    let baseURL = "https://newsapi.org/"
+    var API_KEY = "206451b170ae4f73834d02e9badb031e"
+    let BASE_URL = "https://newsapi.org/"
+    var API_PAGE_LIMIT = 20
     
+    public func setUP(apiKey: String, pageLimit: Int) {
+        self.API_KEY = apiKey
+        self.API_PAGE_LIMIT = pageLimit
+    }
      
 }
