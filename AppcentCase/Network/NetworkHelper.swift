@@ -12,7 +12,7 @@ enum HttpMethods: String {
     case post = "POST"
 }
 
-enum ErrorTypes: String , Error {
+enum ErrorTypes: String , Error, Decodable {
     case invalidData = "invalid Data"
     case invalidUrl = "invalid URL"
     case generalError = "an error happened"

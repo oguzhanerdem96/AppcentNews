@@ -43,6 +43,16 @@ extension Endpoint {
             }
         }
     }
+    
+    extension Endpoint {
+    var headers: HTTPHeaders? {
+        switch self {
+        case .topHeadlines,
+             .everything:
+            return nil
+        }
+    }
+}
 
 extension Endpoint {
     var parameters: Parameters? {

@@ -85,6 +85,7 @@
                                             <outlet property="favDescLbl" destination="Wpn-du-4rE" id="EDP-eC-7tg"/>
                                             <outlet property="favImageView" destination="Lwt-PR-0uL" id="zwn-UV-QO8"/>
                                             <outlet property="favTitleLbl" destination="G6J-vp-kO3" id="aji-ME-YRL"/>
+                                            <segue destination="7Gf-nK-7u0" kind="show" id="L4k-wk-K3F"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -445,6 +446,9 @@
             <point key="canvasLocation" x="1887.7862595419847" y="-727.46478873239437"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="L4k-wk-K3F"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="clock" catalog="system" width="128" height="123"/>
