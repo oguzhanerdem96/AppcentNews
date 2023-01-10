@@ -50,9 +50,18 @@ extension Endpoint {
         case .topHeadlines(let countryCode):
             return [
                 "apiKey": NetworkHelper.shared.API_KEY,
-                "pageSize": NetworkHelper.shared.API_PAGE_LIMIT
-                "country": countryCode
+                "pageSize": NetworkHelper.shared.API_PAGE_LIMIT,
+                "country": countryCode,
                 "category": "general"
+            ]
+            
+        case .everything(let query, let languageCode):
+            return [
+                "apiKey": NetworkHelper.shared.API_KEY,
+                "pageSize": NetworkHelper.shared.API_PAGE_LIMIT,
+                "language": languageCode,
+                "sortBy": "relevant",
+                "q": query
             ]
         }
         
