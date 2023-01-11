@@ -7,32 +7,77 @@
 
 import Foundation
 
-// MARK: - News
-struct News: Codable {
-    let status: String?
-    let totalResults: Int?
-    let articles: [Article]?
-}
+public typealias NewsModels = [NewsModel]
 
-// MARK: - Article
-struct Article: Codable {
-    let source: Source?
-    let author: String?
-    let title, articleDescription: String?
-    let url: String?
-    let urlToImage: String?
-    let publishedAt: Date?
-    let content: String?
-
+public struct NewsModel: Decodable {
+    public var id: String
+    
+    public var sourceName: String?
+    public var author: String?
+    public var title: String?
+    public var description: String?
+    public var url: String?
+    public var imageUrl: String?
+    public var publishedAt: String?
+    public var content: String?
+    
     enum CodingKeys: String, CodingKey {
-        case source, author, title
-        case articleDescription = "description"
-        case url, urlToImage, publishedAt, content
+        case source
+        case author
+        case title
+        case description
+        case url
+        case imageUrl = "urlToImage"
+        case publishedAt
+        case content
+    }
+    
+    public init(
+        id: String,
+        sourceName: String?,
+        author: String?,
+        title: String?,
+        description: String?,
+        url: String?,
+        imageUrl: String?,
+        publishedAt: String?,
+        content: String?
+    ) {
+        self.id = id
+        self.sourceName = sourceName
+        self.author = author
+        self.title = title
+        self.description = description
+        self.url = url
+        self.imageUrl = imageUrl
+        self.publishedAt = publishedAt
+        self.content = content
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        
+        let source = try values.decode(NewsSourceModel?.self, forKey: .source)
+        
+        sourceName = source?.name
+        author = try values.decode(String?.self, forKey: .author)
+        title = try values.decode(String?.self, forKey: .title)
+        description = try values.decode(String?.self, forKey: .description)
+        url = try values.decode(String?.self, forKey: .url)
+        imageUrl = try values.decode(String?.self, forKey: .imageUrl)
+        publishedAt = try values.decode(String?.self, forKey: .publishedAt)
+        content = try values.decode(String?.self, forKey: .content)
+        
+        id = "\(title ?? "")-\(publishedAt ?? "")"
+        
+        if author == "" {
+            author = nil
+        }
     }
 }
 
-// MARK: - Source
-struct Source: Codable {
-    let id: String?
-    let name: String?
+public struct NewsSourceModel: Decodable {
+    public var id:String?
+    public var name: String?
 }
+

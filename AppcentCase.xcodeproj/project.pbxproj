@@ -28,6 +28,8 @@
 		66BAC121296463CB00ECD36E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 66BAC120296463CB00ECD36E /* Alamofire */; };
 		66BAC124296463DC00ECD36E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 66BAC123296463DC00ECD36E /* Kingfisher */; };
 		66BAC12629646B5900ECD36E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BAC12529646B5900ECD36E /* HomeViewModel.swift */; };
+		66DCDCF1296F0482008A9399 /* PaginationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DCDCF0296F0482008A9399 /* PaginationModel.swift */; };
+		66DCDCF3296F0545008A9399 /* InformingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DCDCF2296F0545008A9399 /* InformingState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		66BAC11B2964433900ECD36E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		66BAC11D2964639E00ECD36E /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		66BAC12529646B5900ECD36E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		66DCDCF0296F0482008A9399 /* PaginationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationModel.swift; sourceTree = "<group>"; };
+		66DCDCF2296F0545008A9399 /* InformingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformingState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,8 @@
 				661F0CF929634E2700352D4C /* NetworkHelper.swift */,
 				661F0CFB29634E3200352D4C /* NetworkManager.swift */,
 				661454A42968B298007D1BC5 /* EndPoint.swift */,
+				66DCDCF0296F0482008A9399 /* PaginationModel.swift */,
+				66DCDCF2296F0545008A9399 /* InformingState.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -334,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66BAC11E2964639E00ECD36E /* NewsModel.swift in Sources */,
+				66DCDCF3296F0545008A9399 /* InformingState.swift in Sources */,
 				661F0D0129634F8200352D4C /* DetailCell.swift in Sources */,
 				66BAC11C2964433900ECD36E /* TabBarController.swift in Sources */,
 				661F0CFC29634E3200352D4C /* NetworkManager.swift in Sources */,
@@ -345,6 +352,7 @@
 				661AA1E0296200AE00F5CE3F /* SceneDelegate.swift in Sources */,
 				661454A52968B298007D1BC5 /* EndPoint.swift in Sources */,
 				661AA1E8296200AE00F5CE3F /* AppcentCase.xcdatamodeld in Sources */,
+				66DCDCF1296F0482008A9399 /* PaginationModel.swift in Sources */,
 				661AA1F7296209E200F5CE3F /* DetailVC.swift in Sources */,
 				661F0D0529634FB000352D4C /* HomeCell.swift in Sources */,
 				66BAC12629646B5900ECD36E /* HomeViewModel.swift in Sources */,
