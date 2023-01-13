@@ -12,7 +12,7 @@ protocol HomeScreenProtocol: AnyObject {
 }
 
 final class HomeVC: UIViewController {
-   private let viewModel = HomeViewModel()
+   private let viewModel = NewsViewModelDelegate?
 
     @IBOutlet weak var homeTableView: UITableView!
     override func viewDidLoad() {

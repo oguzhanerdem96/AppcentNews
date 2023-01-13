@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 protocol NewsViewModelDelegate: AnyObject {
     func getDataForNewsViewModel(error: ErrorTypes?)
 }
@@ -23,12 +21,12 @@ final class NewsViewModel {
     func fetchData() {
         state = .loading
         
-        NewsAPI.shared.request(
+        NetworkManager.shared.request(
             endpoint: .topHeadlines(
                 countryCode: LocalizationUtility.getRegionCode()
             ),
             page: 1
-        ) { [weak self] (result: Result<PaginationModel<NewsModel>?, ErrorModel>) in
+        ) { [weak self] (result: Result<PaginationModel<NewsModel>?, ErrorTypes>) in
             guard let self = self else {
                 return
             }
